@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #e74c3c;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.question {
+    color: #333;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.yes-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.yes-btn:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+.no-btn {
+    background: #bdc3c7;
+    color: #333;
+}
+
+.no-btn:hover {
+    background: #95a5a6;
+    transform: scale(1.05);
+}
+
+.message {
+    color: #27ae60;
+    font-size: 1.2em;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 25px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    .question {
+        font-size: 1.1em;
+    }
+}
